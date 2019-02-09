@@ -1,0 +1,95 @@
+.card {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 25px;
+  padding: 5px;
+  background: white;
+  display: inline-block;
+  border-radius: 110px;
+  vertical-align: top;
+  box-shadow: 2px 2px 16px -4px rgba(0, 0, 0, 0.75);
+}
+
+.card:hover {
+  background: #4a7253;
+  color: white;
+}
+
+body {
+  width: 500px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 14px;
+  padding-top: 15px;
+  word-wrap: break-word;
+  color: white;
+  font-family: 'Staatliches', cursive;
+}
+
+h1 {
+  font-size: 18px;
+  padding-top: 15px;
+  word-wrap: break-word;
+  font-family: 'Staatliches', cursive;
+}
+
+
+html {
+  background-image: url(https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/2018/europeslostf.jpg);
+  font-family: arial;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#infolaatikko {
+  width: 500px;
+  padding: 20px;
+  height: 500px;
+  background-color: white;
+  color: black;
+  margin: auto;
+  margin-top: 25px;
+  text-align: center;
+}
+
+#header {
+  height: 10px;
+  font-family: 'Staatliches', cursive;
+  font-size: 50px;
+  padding: 20px;
+  color: white;
+  margin: auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#text {
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  margin-top: -80px;
+}
