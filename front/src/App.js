@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { React, Component } from 'react';
 import './App.css';
 
 class Point extends Component {
@@ -11,25 +11,28 @@ class Point extends Component {
   }
 }
 
-class Popup extends Component {
-  render() {
-    return (
-      <div>
-
-      </div>
-    );
-  }
-}
-
 class WeatherIcon extends Component {
   render() {
     return (
       <div>
-        <span className="temp">{temp}</span>
+        <span className="weather">{this.props.weather}</span>
+        <span className="temp">{this.props.temp}</span>
       </div>
     );
   }
 }
+
+class Popup extends Component {
+  render() {
+    return (
+      <div>
+        <WeatherIcon weather="moi" temp="moimoi"/>
+      </div>
+    );
+  }
+}
+
+
 
 class Test extends Component {
   render() {
