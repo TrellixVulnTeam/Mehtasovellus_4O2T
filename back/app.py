@@ -12,6 +12,7 @@ def testing():
 
     nature_data = requests.get(nature_url).json()
 
+    # Function for getting the weather at a certain location
     def get_weather(latitude, longitude):
         url = 'https://api.openweathermap.org/data/2.5/weather?lat=' + \
             str(latitude)+'&lon='+str(longitude) + \
@@ -24,7 +25,6 @@ def testing():
         coordinates = i['routes']['features'][0]['geometry']['coordinates'][0]
         routes = i['routes']['features']
         for route in i['routes']['features']:
-            n = 0
             distance = 0
             for coordinate_1, coordinate_2 in zip(
                 route["geometry"]["coordinates"][:-1], route["geometry"]["coordinates"][1:]
