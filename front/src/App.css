@@ -1,0 +1,28 @@
+
+.header {
+  color: rgb(27, 119, 92);
+  display: block;
+  text-align: center;
+  height: 5%;
+}
+
+.point {
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgb(27, 119, 92);
+  margin: 10px;
+  height: 110px;
+  width: 110px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.pointText {
+  margin: auto;
+}
+
+/*27, 119, 92 normi/logo
+88, 168, 145 aktiivinen
+*/
